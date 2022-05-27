@@ -1,2 +1,37 @@
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+}
+
+.top__location {
+  background-color: #9356DC;
+}
+
+.top__description {
+  background-color: #FF79DA;
+}
+
+.fonctionnement__number {
+  background-color: red;
+}
+
+.restaurants__container .top__new {
+  background-color: aqua;
+}
+
+.restaurants__container .bottom__description {
+  background-color: aquamarine;
+}
+
+.restaurants__container .bottom__heart {
+  background-color: orange;
+}
+
+.footer {
+  background-color: #353535;
+}
+
+.footer__logo {
+  color: white;
+}
 /*# sourceMappingURL=style.css.map */

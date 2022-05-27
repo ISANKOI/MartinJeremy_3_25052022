@@ -1,5 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import "./Base/typography";
 $color-primary:#9356DC;
 $color-secondary:#FF79DA;
 $color-tertiary:#99E2D0;
 
+header{
+    
+    nav{
+
+        .logo{
+        
+
+        }
+    }
+    
+    
+}
+
+.top{
+
+    &__location{
+        background-color: $color-primary;
+
+    }
+
+    &__description{
+        background-color: #FF79DA;
+
+    }
+
+}
+
+.fonctionnement{
+
+    &__number{
+        background-color: red;
+
+    }
+}
+
+.restaurants{
+
+    &__container{
+
+        .top{
+
+            &__new{
+                background-color: aqua;
+
+            }
+
+        }
+        .bottom{
+            
+            &__description{
+                background-color: aquamarine;
+
+            }
+            &__heart{
+                background-color: orange;
+
+            }
+
+        }
+    }
+}
+
+.footer{
+    background-color: #353535;
+    &__logo{
+        color: white;
+    }
+
+}
