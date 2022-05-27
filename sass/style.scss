@@ -3,13 +3,19 @@ $color-primary:#9356DC;
 $color-secondary:#FF79DA;
 $color-tertiary:#99E2D0;
 
+a{ text-decoration: none;}
+ul{list-style-type:none;}
+h1, h2, h3, h4, h5 { margin: 0px;}
+
 header{
-    
+    padding: 16px;
     nav{
-
+        display: flex;
+        justify-content: center;
         .logo{
-        
-
+            width: 180px;
+            height: 32px;
+            
         }
     }
     
@@ -17,58 +23,128 @@ header{
 }
 
 .top{
+    
 
     &__location{
-        background-color: $color-primary;
+        background-color: #EAEAEA;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 16px;
 
     }
 
     &__description{
-        background-color: #FF79DA;
+        background-color: #F6F6F6;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 32px;
+        
+        .button{
+            color: white;
+            border-radius: 50px;
+            background-color: $color-secondary;
+            height: 45px;
+            
+        }
+        
 
     }
 
 }
 
 .fonctionnement{
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    &__list{
+        
+        padding: 0px;
+        li{
+            display: flex;
+            width: 100%;
+            background-color: #F6F6F6;
+            border-radius: 20px 20px 20px 20px;
+            height: 64px;
+       
 
-    &__number{
-        background-color: red;
+        .number{
+            text-align: center;
+            background-color: $color-primary;
+            border-radius: 50%;
+            color: white;
+            height: 26px;
+            width: 26px;
 
+           
+
+        }
+    }
     }
 }
 
 .restaurants{
+    background-color: #F6F6F6;
 
     &__container{
 
-        .top{
+        article {
 
-            &__new{
-                background-color: aqua;
+            .top{
+
+                &__new{
+                background-color: $color-tertiary;
+
+                }
+                
+
+            }
+            img{
+                width: 100%;
+                height: 200px;
 
             }
 
-        }
-        .bottom{
-            
-            &__description{
-                background-color: aquamarine;
+            .bottom{
+                display: flex;
+                align-items: center;
+                border-radius: 0 0px 20px 20px;
+                padding: 16px;
+                
+
+                &__description{
+                
+                width: 100%;
+
+                }
+                &__heart{
+                    
+                    font-size: 40px;
+                    
+
+                }
 
             }
-            &__heart{
-                background-color: orange;
-
-            }
-
         }
     }
 }
 
 .footer{
+    width: 100%;
     background-color: #353535;
+    padding: 16px;
     &__logo{
         color: white;
+    }
+    &__list{
+        padding: 0px;
+        li{
+            line-height: 24px;
+            a{
+                color: white;
+            }
+        }
     }
 
 }

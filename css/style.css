@@ -3,35 +3,129 @@
   src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 }
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0px;
+}
+
+header {
+  padding: 16px;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav .logo {
+  width: 180px;
+  height: 32px;
+}
+
 .top__location {
-  background-color: #9356DC;
+  background-color: #EAEAEA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
 }
 
 .top__description {
+  background-color: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 32px;
+}
+
+.top__description .button {
+  color: white;
+  border-radius: 50px;
   background-color: #FF79DA;
+  height: 45px;
 }
 
-.fonctionnement__number {
-  background-color: red;
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
 }
 
-.restaurants__container .top__new {
-  background-color: aqua;
+.fonctionnement__list {
+  padding: 0px;
 }
 
-.restaurants__container .bottom__description {
-  background-color: aquamarine;
+.fonctionnement__list li {
+  display: flex;
+  width: 100%;
+  background-color: #F6F6F6;
+  border-radius: 20px 20px 20px 20px;
+  height: 64px;
 }
 
-.restaurants__container .bottom__heart {
-  background-color: orange;
+.fonctionnement__list li .number {
+  text-align: center;
+  background-color: #9356DC;
+  border-radius: 50%;
+  color: white;
+  height: 26px;
+  width: 26px;
+}
+
+.restaurants {
+  background-color: #F6F6F6;
+}
+
+.restaurants__container article .top__new {
+  background-color: #99E2D0;
+}
+
+.restaurants__container article img {
+  width: 100%;
+  height: 200px;
+}
+
+.restaurants__container article .bottom {
+  display: flex;
+  align-items: center;
+  border-radius: 0 0px 20px 20px;
+  padding: 16px;
+}
+
+.restaurants__container article .bottom__description {
+  width: 100%;
+}
+
+.restaurants__container article .bottom__heart {
+  font-size: 40px;
 }
 
 .footer {
+  width: 100%;
   background-color: #353535;
+  padding: 16px;
 }
 
 .footer__logo {
+  color: white;
+}
+
+.footer__list {
+  padding: 0px;
+}
+
+.footer__list li {
+  line-height: 24px;
+}
+
+.footer__list li a {
   color: white;
 }
 /*# sourceMappingURL=style.css.map */
