@@ -1,0 +1,29 @@
+.footer {
+  width: 100%;
+  background-color: #353535;
+  padding: 16px;
+}
+
+.footer__logo {
+  font-size: 18px;
+  font-family: 'Shrikhand', "cursive";
+  color: white;
+}
+
+.footer__list {
+  padding: 0px;
+}
+
+.footer__list li {
+  line-height: 24px;
+}
+
+.footer__list li a {
+  color: white;
+}
+
+.footer__list li a i {
+  width: 16px;
+  padding-right: 8px;
+}
+/*# sourceMappingURL=footer.css.map */

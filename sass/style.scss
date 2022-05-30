@@ -1,4 +1,6 @@
 @import "./Base/typography";
+@import "./Utils/mixins.scss";
+@import "./Layout/footer.scss";
 body{ 
     font-family: 'Roboto', sans-serif;
     margin: 0px;
@@ -25,9 +27,7 @@ header{
             height: 32px;
             
         }
-    }
-    
-    
+    }     
 }
 
 .top{
@@ -52,22 +52,7 @@ header{
         padding: 32px;
         gap: 12px;
 
-        .button{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            border-radius: 50px;
-            background-color: $color-secondary;
-            height: 50px;
-            width: 230px;
-            font-weight: bold;
-            box-shadow: 4px 4px 10px;
-            background-image: linear-gradient(to top, $color-primary, $color-secondary );
-            
-        
-            
-        }
+        .button { @include btn-gradient; }
         
     }
 }
@@ -90,7 +75,6 @@ header{
             height: 74px;
             gap: 16px;
             font-weight: bold;
-       
 
             .number{
                 display: flex;
@@ -102,7 +86,6 @@ header{
                 height: 26px;
                 width: 26px;
             }
-        
         }
         .li__last{
             i{color: $color-primary;}
@@ -121,22 +104,24 @@ header{
         gap: 16px;
 
         article {
-
+            
             .top{
 
                 &__new{
                 background-color: $color-tertiary;
+                position: absolute;
+                right: 32px;
+                padding: 8px;
+                margin-top: 18px;
 
-                }
-                
-
+                } 
             }
+
             img{
                 width: 100%;
                 height: 192px;
                 border-radius: 20px 20px 0 0;
                 object-fit: cover;
-
 
             }
 
@@ -157,43 +142,16 @@ header{
                     
                     font-size: 30px;
                     
-
                     &:hover{
-                        background-color: ($color-primary);
-                        
+                        background-image: linear-gradient(red, blue);
+                        background-clip: text;
+                        color: transparent;      
 
                     }
-                    
-                    
-
                 }
-
             }
         }
     }
 }
 
-.footer{
-    width: 100%;
-    background-color: #353535;
-    padding: 16px;
-    &__logo{
-        font-size: 18px;
-        font-family: 'Shrikhand', "cursive";
-        color: white;
-    }
-    &__list{
-        padding: 0px;
-        li{
-            line-height: 24px;
-            a{
-                color: white;
-                i{
-                    width: 16px;
-                    padding-right: 8px;
-                }
-            }
-        }
-    }
 
-}

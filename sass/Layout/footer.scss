@@ -1,0 +1,24 @@
+.footer{
+    width: 100%;
+    background-color: #353535;
+    padding: 16px;
+    &__logo{
+        font-size: 18px;
+        font-family: 'Shrikhand', "cursive";
+        color: white;
+    }
+    &__list{
+        padding: 0px;
+        li{
+            line-height: 24px;
+            a{
+                color: white;
+                i{
+                    width: 16px;
+                    padding-right: 8px;
+                }
+            }
+        }
+    }
+
+}
