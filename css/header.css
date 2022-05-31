@@ -1,0 +1,18 @@
+header {
+  padding: 16px;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav i {
+  font-weight: 500;
+}
+
+header nav .logo {
+  width: 180px;
+  height: 32px;
+}
+/*# sourceMappingURL=header.css.map */
