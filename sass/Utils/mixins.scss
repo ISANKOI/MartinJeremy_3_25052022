@@ -4,10 +4,16 @@
     align-items: center;
     color: white;
     border-radius: 50px;
-    background-color: $color-secondary;
-    height: 50px;
-    width: 230px;
     font-weight: bold;
-    box-shadow: 4px 4px 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.20);
     background-image: linear-gradient(to top, $color-primary, $color-secondary );
+    cursor: pointer;
+    transition-duration: 0.30s;
+
+    &:hover{
+        background-color: white;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.50);
+        opacity: 0.9;
+
+    }
 }

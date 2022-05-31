@@ -52,14 +52,18 @@ header{
         padding: 32px;
         gap: 12px;
 
-        .button { @include btn-gradient; }
+        .button { 
+            @include btn-gradient; 
+            height: 50px;
+            width: 230px;
+        }
         
     }
 }
 
 .fonctionnement{
-    width: calc(100% - 32px);
-    padding: 16px;
+    width: calc(100% - 48px);
+    padding: 24px;
     &__list{
         display: flex;
         flex-direction: column;
@@ -69,10 +73,11 @@ header{
         li{
             display: flex;
             align-items: center;
-            width: 100%;
+            position: relative;
             background-color: #F6F6F6;
-            border-radius: 20px 20px 20px 20px;
-            height: 74px;
+            border-radius: 22px 22px 22px 22px;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.20);
+            padding: 28px;
             gap: 16px;
             font-weight: bold;
 
@@ -80,11 +85,13 @@ header{
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                position: absolute;
+                left: -12px;
                 background-color: $color-primary;
                 border-radius: 50%;
                 color: white;
-                height: 26px;
-                width: 26px;
+                height: 24px;
+                width: 24px;
             }
         }
         .li__last{
@@ -95,7 +102,7 @@ header{
 }
 
 .restaurants{
-    padding: 16px;
+    padding: 24px;
     background-color: #F6F6F6;
 
     &__container{
@@ -104,15 +111,20 @@ header{
         gap: 16px;
 
         article {
+            display: flex;
+            flex-direction: column;
+            position: relative;
             
             .top{
 
                 &__new{
-                background-color: $color-tertiary;
+                
                 position: absolute;
-                right: 32px;
+                right: 14px;
                 padding: 8px;
-                margin-top: 18px;
+                top: 14px;;
+                background-color: $color-tertiary;
+                color: #1b6150;
 
                 } 
             }
@@ -130,7 +142,7 @@ header{
                 align-items: center;
                 border-radius: 0 0px 20px 20px;
                 padding: 16px;
-                background-color: white;
+                background-color: rgb(255, 255, 255);
                 
 
                 &__description{

@@ -89,17 +89,24 @@ header nav .logo {
   align-items: center;
   color: white;
   border-radius: 50px;
-  background-color: #FF79DA;
+  font-weight: bold;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
+  cursor: pointer;
+  transition-duration: 0.30s;
   height: 50px;
   width: 230px;
-  font-weight: bold;
-  box-shadow: 4px 4px 10px;
-  background-image: linear-gradient(to top, #9356DC, #FF79DA);
+}
+
+.top__description .button:hover {
+  background-color: white;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  opacity: 0.9;
 }
 
 .fonctionnement {
-  width: calc(100% - 32px);
-  padding: 16px;
+  width: calc(100% - 48px);
+  padding: 24px;
 }
 
 .fonctionnement__list {
@@ -112,10 +119,11 @@ header nav .logo {
 .fonctionnement__list li {
   display: flex;
   align-items: center;
-  width: 100%;
+  position: relative;
   background-color: #F6F6F6;
-  border-radius: 20px 20px 20px 20px;
-  height: 74px;
+  border-radius: 22px 22px 22px 22px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 28px;
   gap: 16px;
   font-weight: bold;
 }
@@ -124,11 +132,13 @@ header nav .logo {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  left: -12px;
   background-color: #9356DC;
   border-radius: 50%;
   color: white;
-  height: 26px;
-  width: 26px;
+  height: 24px;
+  width: 24px;
 }
 
 .fonctionnement__list .li__last {
@@ -140,7 +150,7 @@ header nav .logo {
 }
 
 .restaurants {
-  padding: 16px;
+  padding: 24px;
   background-color: #F6F6F6;
 }
 
@@ -150,12 +160,19 @@ header nav .logo {
   gap: 16px;
 }
 
+.restaurants__container article {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
 .restaurants__container article .top__new {
-  background-color: #99E2D0;
   position: absolute;
-  right: 32px;
+  right: 14px;
   padding: 8px;
-  margin-top: 18px;
+  top: 14px;
+  background-color: #99E2D0;
+  color: #1b6150;
 }
 
 .restaurants__container article img {
