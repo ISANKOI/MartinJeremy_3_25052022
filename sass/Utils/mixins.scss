@@ -18,3 +18,8 @@
 
     }
 }
+
+@mixin menu-bordure {
+    border-bottom: 4px solid #99e2d0;
+    width: 48px;  
+}

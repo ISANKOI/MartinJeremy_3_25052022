@@ -63,8 +63,7 @@ header{
 
         .button { 
             @include btn-gradient; 
-            height: 50px;
-            width: 230px;
+            
         }
         
     }
@@ -204,18 +203,32 @@ main{background-color: #f6f6f6;}
     
     }
     .containerItem{
-        padding: 32px;
+        padding: 16px;
+        &__titre{
+            padding-bottom: 6px;
+            @include menu-bordure;
+
+        }
         .menuList{
             display: flex;
             flex-direction: column;
             gap: 16px;
             &__plat{
-                background-color: white ;
+                display: flex;
+                justify-content: space-between;
+                background-color: white;
                 border-radius: 12px 12px 12px 12px;
                 padding: 16px;
+                box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.10);
+                &__nom{
+                    flex-direction: column;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
                 &__prix{
                     display: flex;
-                    justify-content: flex-end;
+                    align-items: flex-end;
                 }
             }
         }
@@ -229,7 +242,7 @@ main{background-color: #f6f6f6;}
     padding: 40px 0;
     &__button{
         @include btn-gradient;
-        width: 150px;
         font-weight: 500px;
     }
 }
+

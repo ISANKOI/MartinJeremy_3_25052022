@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu - La palette du goût</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <header>
         <nav>
@@ -23,58 +27,80 @@
                 <i class="fa-regular fa-heart"></i>
             </div>
             <div class="containerItem">
-                <h3>ENTRÉES</h3>
+                <h3 class="containerItem__titre">ENTRÉES</h3>
                 <ul class="menuList">
                     <li class="menuList__plat">
-                        <h4>Fricassée d'escargot</h4>
-                        <span>Au piment d'Espelette</span>
-                        <div class="menuList__plat__prix">25€</div>
+                        <div class="menuList__plat__nom">
+                            <h4>Fricassée d'escargot</h4>
+                            <span>Au piment d'Espelette</span>
+                        </div>
+                        <div class="menuList__plat__prix"><b>25€</b></div>
                     </li>
                     <li class="menuList__plat">
-                        <h4>Foie gras de canard mi-cuit</h4>
-                        <span>Et ses copeaux de truffe noire</span>
-                        <div class="menuList__plat__prix">35€</div>
+                        <div class="menuList__plat__nom">
+                            <h4>Foie gras de canard mi-cuit</h4>
+                            <span>Et ses copeaux de truffe noire</span>
+                        </div>
+                        <div class="menuList__plat__prix"><b>35€</b></div>
                     </li>
                     <li class="menuList__plat">
-                        <h4>Oeuf au plat</h4>
-                        <span>Assaisonné à la truffe sur lit de caviar</span>
-                        <div class="menuList__plat__prix">20€</div>
+                        <div class="menuList__plat__nom">
+                            <h4>Oeuf au plat</h4>
+                            <span>Assaisonné à la truffe sur lit de caviar</span>
+                        </div>
+                        <div class="menuList__plat__prix"><b>20€</b></div>
                     </li>
                 </ul>
-                <h3>PLATS</h3>
-                <ul>
-                    <li>
-                        <h4>Filet de boeuf aux herbes</h4>
-                        <span>Accompagné de sa ribambelle de légumes</span>
-                        <div class="menu__list__prix">40€</div>
+            </div>
+            <div class="containerItem">
+                <h3 class="containerItem__titre">PLATS</h3>
+                <ul class="menuList">
+                    <li class="menuList__plat">
+                        <div class="menuList__plat__nom">
+                            <h4>Filet de boeuf aux herbes</h4>
+                            <span>Accompagné de sa ribambelle de légumes</span>
+                        </div>
+                        <div class="menuList__plat__prix"><b>40€</b></div>
                     </li>
-                    <li>
-                        <h4>Parmentier de queue de boeuf</h4>
-                        <span>À la truffe noire sur sa purée de panais</span>
-                        <div class="menu__list__prix">35€</div>
+                    <li class="menuList__plat">
+                        <div class="menuList__plat__nom">
+                            <h4>Parmentier de queue de boeuf</h4>
+                            <span>À la truffe noire sur sa purée de panais</span>
+                        </div>
+                        <div class="menuList__plat__prix"><b>35€</b></div>
                     </li>
-                    <li>
-                        <h4>Filet de turbot</h4>
-                        <span>Aux agrumes</span>
-                        <div class="menu__list__prix">44€</div>
+                    <li class="menuList__plat">
+                        <div class="menuList__plat__nom">
+                            <h4>Filet de turbot</h4>
+                            <span>Aux agrumes</span>
+                        </div>
+                        <div class="menuList__plat__prix"><b>44€</b></div>
                     </li>
                 </ul>
-                <h3>DESSERTS</h3>
-                <ul>
-                    <li>
-                        <h4>Paris-Brest</h4>
-                        <span>Revisité</span>
-                        <div class="menu__prix">18€</div>
+            </div>
+            <div class="containerItem">
+                <h3 class="containerItem__titre">DESSERTS</h3>
+                <ul class="menuList">
+                    <li class="menuList__plat">
+                        <div class="menuList__plat__nom">
+                            <h4>Paris-Brest</h4>
+                            <span>Revisité</span>
+                        </div>
+                        <div class="menuList__plat__prix"><b>18€</b></div>
                     </li>
-                    <li>
-                        <h4>Macaron au chocolat d'exception</h4>
-                        <span>Et glace à la vanille de Madagascar</span>
-                        <div class="menu__prix">22€</div>
+                    <li class="menuList__plat">
+                        <div class="menuList__plat__nom">
+                            <h4>Macaron au chocolat d'exception</h4>
+                            <span>Et glace à la vanille de Madagascar</span>
+                        </div>
+                        <div class="menuList__plat__prix"><b>22€</b></div>
                     </li>
-                    <li>
-                        <h4>Mousse au chocolat</h4>
-                        <span>Au piment d'Espelette et à la truffe noire</span>
-                        <div class="menu__prix">23€</div>
+                    <li class="menuList__plat">
+                        <div class="menuList__plat__nom">
+                            <h4>Mousse au chocolat</h4>
+                            <span>Au piment d'Espelette et à la truffe noire</span>
+                        </div>
+                        <div class="menuList__plat__prix"><b>23€</b></div>
                     </li>
                 </ul>
             </div>
@@ -93,4 +119,5 @@
         </ul>
     </footer>
 </body>
+
 </html>

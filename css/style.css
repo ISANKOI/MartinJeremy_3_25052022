@@ -105,8 +105,6 @@ header nav .logo {
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
   cursor: pointer;
   transition-duration: 0.30s;
-  height: 50px;
-  width: 230px;
 }
 
 .top__description .button:hover {
@@ -247,7 +245,13 @@ main {
 }
 
 .menu .containerItem {
-  padding: 32px;
+  padding: 16px;
+}
+
+.menu .containerItem__titre {
+  padding-bottom: 6px;
+  border-bottom: 4px solid #99e2d0;
+  width: 48px;
 }
 
 .menu .containerItem .menuList {
@@ -257,14 +261,24 @@ main {
 }
 
 .menu .containerItem .menuList__plat {
+  display: flex;
+  justify-content: space-between;
   background-color: white;
   border-radius: 12px 12px 12px 12px;
   padding: 16px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu .containerItem .menuList__plat__nom {
+  flex-direction: column;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .menu .containerItem .menuList__plat__prix {
   display: flex;
-  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .commande {
@@ -286,7 +300,6 @@ main {
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
   cursor: pointer;
   transition-duration: 0.30s;
-  width: 150px;
   font-weight: 500px;
 }
 
