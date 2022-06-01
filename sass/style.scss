@@ -7,8 +7,6 @@ body{
     margin: 0px;
 }
 
-
-
 ul{list-style-type:none;
     padding: 0px;
 }
@@ -35,8 +33,7 @@ header{
         .logo{
             width: 180px;
             height: 32px; 
-        }
-        
+        }  
     }     
 }
 
@@ -62,11 +59,10 @@ header{
         padding: 32px;
         gap: 12px;
 
-        .button { 
+        &__heart { 
             @include btn-gradient; 
             
-        }
-        
+        }   
     }
 }
 
@@ -87,7 +83,7 @@ header{
             background-color: #F6F6F6;
             border-radius: 22px 22px 22px 22px;
             box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.20);
-            padding: 28px;
+            padding: 26px;
             gap: 16px;
             font-weight: bold;
 
@@ -194,6 +190,7 @@ main{background-color: #f6f6f6;}
 
         &__titre {
             font-family: 'Shrikhand', "cursive";
+            font-size: 26px;
         }
         &__heart{
             @include heart-btn;
@@ -204,6 +201,7 @@ main{background-color: #f6f6f6;}
         padding: 16px;
         &__titre{
             padding-bottom: 6px;
+            font-weight: 400;
             @include menu-bordure;
 
         }
