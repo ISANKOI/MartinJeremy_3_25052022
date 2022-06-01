@@ -21,6 +21,7 @@ a{ text-decoration: none;
 header{
     padding: 16px;
     position: relative;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.20);
     nav{
         display: flex;
         justify-content: center;
@@ -72,6 +73,7 @@ header{
 .fonctionnement{
     width: calc(100% - 48px);
     padding: 24px;
+    background-color: white;
     &__list{
         display: flex;
         flex-direction: column;
@@ -159,16 +161,9 @@ header{
 
                 }
                 &__heart{
+                    @include heart-btn;
                     
-                    font-size: 30px;
-                    transition-duration: 0.35s;
                     
-                    &:hover{
-                        background-image: linear-gradient(rgb(60, 255, 0), rgb(255, 0, 170));
-                        background-clip: text;
-                        color: transparent;      
-
-                    }
                 }
             }
         }
@@ -199,6 +194,9 @@ main{background-color: #f6f6f6;}
 
         &__titre {
             font-family: 'Shrikhand', "cursive";
+        }
+        &__heart{
+            @include heart-btn;
         }
     
     }

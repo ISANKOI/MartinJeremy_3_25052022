@@ -23,3 +23,17 @@
     border-bottom: 4px solid #99e2d0;
     width: 48px;  
 }
+
+@mixin heart-btn {
+    font-size: 30px;
+    transition-duration: 0.35s;
+                    
+    &:hover{
+            background-image: linear-gradient(rgb(60, 255, 0), rgb(255, 0, 170));
+            background-clip: text;
+            color: transparent;
+            cursor: pointer;      
+
+    }
+    
+}

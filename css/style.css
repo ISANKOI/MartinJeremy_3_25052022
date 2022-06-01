@@ -51,6 +51,7 @@ a {
 header {
   padding: 16px;
   position: relative;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 }
 
 header nav {
@@ -116,6 +117,7 @@ header nav .logo {
 .fonctionnement {
   width: calc(100% - 48px);
   padding: 24px;
+  background-color: white;
 }
 
 .fonctionnement__list {
@@ -212,6 +214,7 @@ header nav .logo {
   background-image: linear-gradient(#3cff00, #ff00aa);
   background-clip: text;
   color: transparent;
+  cursor: pointer;
 }
 
 /*--- MENU RESTAURANTS ---*/
@@ -242,6 +245,18 @@ main {
 
 .menu__nomrestaurant__titre {
   font-family: 'Shrikhand', "cursive";
+}
+
+.menu__nomrestaurant__heart {
+  font-size: 30px;
+  transition-duration: 0.35s;
+}
+
+.menu__nomrestaurant__heart:hover {
+  background-image: linear-gradient(#3cff00, #ff00aa);
+  background-clip: text;
+  color: transparent;
+  cursor: pointer;
 }
 
 .menu .containerItem {
