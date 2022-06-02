@@ -29,6 +29,17 @@
   padding-right: 8px;
 }
 
+@keyframes animation-menu {
+  0% {
+    opacity: 0;
+    transform: translateY(25%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0px;
@@ -94,7 +105,7 @@ header nav .logo {
   gap: 12px;
 }
 
-.top__description__heart {
+.top__description__button {
   padding: 16px 24px;
   display: flex;
   justify-content: center;
@@ -108,7 +119,7 @@ header nav .logo {
   transition-duration: 0.30s;
 }
 
-.top__description__heart:hover {
+.top__description__button:hover {
   background-color: white;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
   opacity: 0.9;
@@ -207,7 +218,6 @@ header nav .logo {
 
 .restaurants__container article .bottom__heart {
   font-size: 30px;
-  transition-duration: 0.35s;
 }
 
 .restaurants__container article .bottom__heart:hover {
@@ -250,7 +260,6 @@ main {
 
 .menu__nomrestaurant__heart {
   font-size: 30px;
-  transition-duration: 0.35s;
 }
 
 .menu__nomrestaurant__heart:hover {
@@ -284,6 +293,43 @@ main {
   border-radius: 12px 12px 12px 12px;
   padding: 16px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  animation: 1000ms both animation-menu;
+}
+
+.menu .containerItem .menuList__plat:nth-child(1) {
+  animation-delay: 200ms;
+}
+
+.menu .containerItem .menuList__plat:nth-child(2) {
+  animation-delay: 400ms;
+}
+
+.menu .containerItem .menuList__plat:nth-child(3) {
+  animation-delay: 600ms;
+}
+
+.menu .containerItem .menuList__plat:nth-child(4) {
+  animation-delay: 800ms;
+}
+
+.menu .containerItem .menuList__plat:nth-child(5) {
+  animation-delay: 1000ms;
+}
+
+.menu .containerItem .menuList__plat:nth-child(6) {
+  animation-delay: 1200ms;
+}
+
+.menu .containerItem .menuList__plat:nth-child(7) {
+  animation-delay: 1400ms;
+}
+
+.menu .containerItem .menuList__plat:nth-child(8) {
+  animation-delay: 1600ms;
+}
+
+.menu .containerItem .menuList__plat:nth-child(9) {
+  animation-delay: 1800ms;
 }
 
 .menu .containerItem .menuList__plat__nom {

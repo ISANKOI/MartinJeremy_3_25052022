@@ -2,6 +2,7 @@
 @import "./Utils/mixins.scss";
 @import "./Utils/variables.scss";
 @import "./Layout/footer.scss";
+@import "./Utils/animations.scss";
 body{ 
     font-family: 'Roboto', sans-serif;
     margin: 0px;
@@ -59,7 +60,7 @@ header{
         padding: 32px;
         gap: 12px;
 
-        &__heart { 
+        &__button { 
             @include btn-gradient; 
             
         }   
@@ -157,6 +158,7 @@ header{
 
                 }
                 &__heart{
+                    font-size: 30px;
                     @include heart-btn;
                     
                     
@@ -193,6 +195,7 @@ main{background-color: #f6f6f6;}
             font-size: 26px;
         }
         &__heart{
+            font-size: 30px;
             @include heart-btn;
         }
     
@@ -209,6 +212,8 @@ main{background-color: #f6f6f6;}
             display: flex;
             flex-direction: column;
             gap: 16px;
+            
+            
             &__plat{
                 display: flex;
                 justify-content: space-between;
@@ -216,6 +221,13 @@ main{background-color: #f6f6f6;}
                 border-radius: 12px 12px 12px 12px;
                 padding: 16px;
                 box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.10);
+                @for $i from 1 to 10 {
+                    &:nth-child(#{$i}) {
+                        animation-delay: 200ms * $i;
+                    }   
+                }
+                animation: 1000ms both animation-menu;
+                
                 &__nom{
                     flex-direction: column;
                     text-overflow: ellipsis;
