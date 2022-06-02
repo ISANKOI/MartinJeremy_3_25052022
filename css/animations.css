@@ -1,3 +1,29 @@
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+
+@keyframes loader-dot {
+  0%, 100% {
+    transform: translate(-39.2px);
+    box-shadow: 0     0 #ff79da, 0     0 #99e2d0;
+  }
+  40% {
+    transform: translate(39.2px);
+    box-shadow: -16.8px  0 #ff79da,-33.6px  0 #99e2d0;
+  }
+  50% {
+    transform: translate(39.2px);
+    box-shadow: 0     0 #ff79da, 0     0 #99e2d0;
+  }
+  90% {
+    transform: translate(-39.2px);
+    box-shadow: 16.8px  0 #ff79da, 33.6px  0 #99e2d0;
+  }
+}
+
 @keyframes animation-menu {
   0% {
     opacity: 0;

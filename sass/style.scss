@@ -1,8 +1,9 @@
 @import "./Base/typography";
 @import "./Utils/mixins.scss";
 @import "./Utils/variables.scss";
-@import "./Layout/footer.scss";
 @import "./Utils/animations.scss";
+@import "./Layout/footer.scss";
+
 body{ 
     font-family: 'Roboto', sans-serif;
     margin: 0px;
@@ -15,6 +16,29 @@ h1, h2, h3, h4, h5 { margin: 0px;}
 
 a{ text-decoration: none;
     color: black;
+}
+
+.loader{
+    position: fixed;
+    inset: 0;
+    background-color:rgba(255, 255, 255, 0.8);
+    height: 100%;
+    z-index: 1000;
+    animation: loader 5s forwards;
+
+    &__dot{
+    width: 20px;
+    height: 20px;
+    background: #9356dc;
+    border-radius: 50%;
+    animation: loader-dot 2s infinite;
+    margin: auto;
+    position: fixed;
+    inset: 0;
+    z-index: 1001;
+
+    }
+    
 }
 
 header{
@@ -109,8 +133,9 @@ header{
 }
 
 .restaurants{
-    padding: 24px;
+    padding: 16px;
     background-color: #F6F6F6;
+    position: relative;
 
     &__container{
         display: flex;
@@ -120,12 +145,8 @@ header{
         article {
             display: flex;
             flex-direction: column;
-            position: relative;
-            
             .top{
-
                 &__new{
-                
                 position: absolute;
                 right: 14px;
                 padding: 8px;
