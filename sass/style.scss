@@ -109,6 +109,14 @@ header{
             padding: 26px;
             gap: 16px;
             font-weight: bold;
+            cursor: pointer;
+            
+            &:hover{
+                i{
+                    color: $color-primary;
+                }
+                background-color: rgba($color-primary, $alpha: 0.1);
+            }
 
             .number{
                 display: flex;
@@ -123,10 +131,6 @@ header{
                 width: 24px;
             }
         }
-        .li__last{
-            i{color: $color-primary;}
-            background-color: rgba($color-primary, $alpha: 0.1)
-        }
     }
 }
 
@@ -134,7 +138,7 @@ header{
     padding: 16px;
     background-color: #F6F6F6;
     
-
+    &__titre{ padding-bottom: 16px;}
     &__container{
         display: flex;
         flex-direction: column;
@@ -239,25 +243,47 @@ main{background-color: #f6f6f6;}
                 justify-content: space-between;
                 background-color: white;
                 border-radius: 12px 12px 12px 12px;
-                padding: 16px;
                 box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.10);
+                animation: 1000ms both animation-menu;
+                overflow: hidden;
+                cursor: pointer;
                 @for $i from 1 to 10 {
                     &:nth-child(#{$i}) {
                         animation-delay: 200ms * $i;
                     }   
+                } 
+                &:hover .menuList__plat__check{
+                    margin-right: 0;
+                    i{
+                        animation: check-rotation 600ms;
+                    }
                 }
-                animation: 1000ms both animation-menu;
-                
+
                 &__nom{
-                    flex-direction: column;
-                    text-overflow: ellipsis;
+                    width: 100%;
+                    padding: 16px;
                     overflow: hidden;
-                    white-space: nowrap;
                 }
                 &__prix{
-                    display: flex;
-                    align-items: flex-end;
+                    padding: 16px;
+                    align-self: end;
                 }
+                &__check{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 10px 20px;
+                    margin-right: -64px;
+                    border-radius: 0 12px 12px 0 ;
+                    background-color: $color-tertiary;
+                    transition: all 500ms;
+                    i{
+                        font-size: 24px;
+                        color: #fff;  
+                    }
+                }
+                    
+                
             }
         }
     }
