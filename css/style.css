@@ -352,8 +352,8 @@ main {
   border-radius: 12px 12px 12px 12px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
   animation: 1000ms both animation-menu;
-  overflow: hidden;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .menu .containerItem .menuList__plat:nth-child(1) {
@@ -403,7 +403,14 @@ main {
 .menu .containerItem .menuList__plat__nom {
   width: 100%;
   padding: 16px;
+  white-space: nowrap;
   overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menu .containerItem .menuList__plat__nom h4 {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .menu .containerItem .menuList__plat__prix {
