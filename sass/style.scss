@@ -7,6 +7,12 @@
 body{ 
     font-family: 'Roboto', sans-serif;
     margin: 0px;
+    @include tablet-desktop-only;
+}
+.wrapper {
+    max-width: 1440px;
+    margin: auto;
+    padding: 0px 32px;
 }
 
 ul{list-style-type:none;
@@ -93,11 +99,11 @@ header{
     width: calc(100% - 48px);
     padding: 24px;
     background-color: white;
+    
     &__list{
         display: flex;
         flex-direction: column;
         gap: 16px;
-        
         padding: 0px;
         li{
             display: flex;
@@ -110,7 +116,6 @@ header{
             gap: 16px;
             font-weight: bold;
             cursor: pointer;
-            
             &:hover{
                 i{
                     color: $color-primary;
@@ -288,13 +293,10 @@ main{background-color: #f6f6f6;}
                         font-size: 24px;
                         color: #fff;  
                     }
-                }
-                    
-                
+                }         
             }
         }
     }
-
 }
 .commande{
     display: flex;

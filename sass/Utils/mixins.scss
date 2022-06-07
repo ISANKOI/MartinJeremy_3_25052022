@@ -27,12 +27,51 @@
 @mixin heart-btn {
 
                   
-    &:hover{
-            background-image: linear-gradient(rgb(60, 255, 0), rgb(255, 0, 170));
-            background-clip: text;
-            color: transparent;
-            cursor: pointer;      
+    &:active{
+        background-image: linear-gradient(to top, $color-primary, $color-secondary );
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        cursor: pointer;   
+        transition: 0.5s both;   
 
+    }
+    
+}
+
+@mixin tablet-desktop-only {
+    @media (min-width: $breakpoints-tablet-desktop) {
+        .fonctionnement{
+            text-align: center;
+            h2{
+                padding-bottom: 24px;
+            }
+        &__list{
+            flex-direction: initial;
+            justify-content: center;
+            gap: 30px;
+            li{
+                width: 100%;
+            }
+        }
+
+        }
+        .restaurants{
+            &__container{
+                flex-wrap: wrap;
+            article{
+                width: calc(50% - 32px);
+            }
+            }
+        }
+        .footer__logo{
+            display: flex;
+            justify-content: center;
+        }
+        .footer__list{
+            display: flex;
+            justify-content: space-evenly;
+        }
     }
     
 }
