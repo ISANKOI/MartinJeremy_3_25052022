@@ -1,6 +1,7 @@
 .footer {
   background-color: #353535;
   padding: 16px;
+  height: calc( 27vh - 178px);
 }
 
 .footer__logo {

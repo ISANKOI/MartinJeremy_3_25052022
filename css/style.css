@@ -48,7 +48,7 @@
 .footer {
   background-color: #353535;
   padding: 16px;
-  height: 100%;
+  height: calc( 27vh - 178px);
 }
 
 .footer__logo {
@@ -100,9 +100,10 @@ body {
   }
   body .restaurants__container {
     flex-wrap: wrap;
+    flex-direction: row;
   }
-  body .restaurants__container article {
-    width: calc(50% - 32px);
+  body .restaurants__container a {
+    width: calc( 50% - 8px);
   }
   body .menuContainer {
     display: flex;
@@ -120,7 +121,7 @@ body {
 }
 
 .wrapper {
-  max-width: 1440px;
+  max-width: 992px;
   margin: auto;
   padding: 0px 32px;
 }
