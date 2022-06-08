@@ -17,6 +17,10 @@
   line-height: 24px;
 }
 
+.footer__list li :hover {
+  text-decoration: underline;
+}
+
 .footer__list li a {
   color: white;
 }

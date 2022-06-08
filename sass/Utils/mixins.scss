@@ -64,13 +64,18 @@
             }
             }
         }
+        .menuContainer {
+            display: flex;
+            justify-content: center;
+        }
         .footer__logo{
             display: flex;
             justify-content: center;
         }
         .footer__list{
             display: flex;
-            justify-content: space-evenly;
+            justify-content: center;
+            gap: 50px;
         }
     }
     

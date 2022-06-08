@@ -48,6 +48,7 @@
 .footer {
   background-color: #353535;
   padding: 16px;
+  height: 100%;
 }
 
 .footer__logo {
@@ -62,6 +63,10 @@
 
 .footer__list li {
   line-height: 24px;
+}
+
+.footer__list li :hover {
+  text-decoration: underline;
 }
 
 .footer__list li a {
@@ -99,13 +104,18 @@ body {
   body .restaurants__container article {
     width: calc(50% - 32px);
   }
+  body .menuContainer {
+    display: flex;
+    justify-content: center;
+  }
   body .footer__logo {
     display: flex;
     justify-content: center;
   }
   body .footer__list {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 50px;
   }
 }
 
@@ -370,6 +380,8 @@ main {
 
 .menu .containerItem {
   padding: 16px;
+  overflow: hidden;
+  width: calc( 100% - 32px);
 }
 
 .menu .containerItem__titre {

@@ -15,12 +15,12 @@ body{
     padding: 0px 32px;
 }
 
-ul{list-style-type:none;
+ul{ list-style-type:none;
     padding: 0px;
 }
 h1, h2, h3, h4, h5 { margin: 0px;}
 
-a{ text-decoration: none;
+a{  text-decoration: none;
     color: black;
 }
 
@@ -89,8 +89,7 @@ header{
         gap: 12px;
 
         &__button { 
-            @include btn-gradient; 
-            
+            @include btn-gradient;   
         }   
     }
 }
@@ -105,6 +104,7 @@ header{
         flex-direction: column;
         gap: 16px;
         padding: 0px;
+
         li{
             display: flex;
             align-items: center;
@@ -118,7 +118,7 @@ header{
             cursor: pointer;
             &:hover{
                 i{
-                    color: $color-primary;
+                color: $color-primary;
                 }
                 background-color: rgba($color-primary, $alpha: 0.1);
             }
@@ -144,6 +144,7 @@ header{
     background-color: #F6F6F6;
     
     &__titre{ padding-bottom: 16px;}
+
     &__container{
         display: flex;
         flex-direction: column;
@@ -182,14 +183,12 @@ header{
                 
 
                 &__description{
-                
-                width: 100%;
-
+                    width: 100%;
                 }
+
                 &__heart{
                     font-size: 30px;
-                    @include heart-btn;
-                    
+                    @include heart-btn;    
                     
                 }
             }
@@ -231,6 +230,9 @@ main{background-color: #f6f6f6;}
     }
     .containerItem{
         padding: 16px;
+        overflow: hidden;
+        width: calc( 100% - 32px);
+
         &__titre{
             padding-bottom: 6px;
             font-weight: 400;
@@ -242,7 +244,6 @@ main{background-color: #f6f6f6;}
             flex-direction: column;
             gap: 16px;
             
-            
             &__plat{
                 display: flex;
                 justify-content: space-between;
@@ -252,6 +253,7 @@ main{background-color: #f6f6f6;}
                 animation: 1000ms both animation-menu;
                 cursor: pointer;
                 overflow: hidden;
+
                 @for $i from 1 to 10 {
                     &:nth-child(#{$i}) {
                         animation-delay: 200ms * $i;
@@ -259,6 +261,7 @@ main{background-color: #f6f6f6;}
                 } 
                 &:hover .menuList__plat__check{
                     margin-right: 0;
+
                     i{
                         animation: check-rotation 600ms;
                     }
@@ -273,13 +276,14 @@ main{background-color: #f6f6f6;}
                     h4{
                         overflow: hidden;
                         text-overflow: ellipsis;
-                    }
-                    
+                    }  
                 }
+
                 &__prix{
                     padding: 16px;
                     align-self: end;
                 }
+                
                 &__check{
                     display: flex;
                     justify-content: center;

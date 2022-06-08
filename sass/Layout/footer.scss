@@ -10,6 +10,9 @@
         padding: 0px;
         li{
             line-height: 24px;
+            :hover{
+                text-decoration: underline;
+            }
             a{
                 color: white;
                 i{
@@ -19,5 +22,4 @@
             }
         }
     }
-
 }
