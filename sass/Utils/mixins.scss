@@ -5,7 +5,6 @@
     align-items: center;
     color: white;
     border-radius: 50px;
-    font-weight: bold;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.20);
     background-image: linear-gradient(to top, $color-primary, $color-secondary );
     cursor: pointer;
@@ -25,50 +24,60 @@
 }
 
 @mixin heart-btn {
-
-    }
-                  
-    /*&:active{
+    .fa-solid{
+        opacity: 0;
         background-image: linear-gradient(to top, $color-primary, $color-secondary );
         background-clip: text;
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
-        cursor: pointer;   
-        transition: 0.5s both;   
+        transition: .5s;
+        cursor: pointer;
+            &:hover{
+                opacity: 1;
+            }    
+        }
+        &:hover .fa-regular{
+            animation: btn-heart 0.25s both;  
+        }
 
     }
-  */  
-
+                  
 
 @mixin tablet-desktop-only {
     @media (min-width: $breakpoints-tablet-desktop) {
-        .fonctionnement{
+        main{
+            background-color: #FFFFFF;
+            .fonctionnement{
             text-align: center;
-            h2{
+                h2{
                 padding-bottom: 24px;
-            }
-        &__list{
+                }
+            &__list{
             flex-direction: initial;
             justify-content: center;
             gap: 30px;
-            li{
+                li{
                 width: 100%;
+                }
             }
-        }
 
-        }
-        .restaurants{
-            &__container{
+            }
+            .restaurants{
+                &__container{
                 flex-wrap: wrap;
                 flex-direction: row;
-            a{
+                a{
                 width: calc( 50% - 8px);
+                }
+                }
             }
-            }
-        }
-        .menuContainer {
+            .menuContainer {
             display: flex;
             justify-content: center;
+            }
+        }
+        .footer{
+            height: calc( 27vh - 178px );
         }
         .footer__logo{
             display: flex;
@@ -79,5 +88,6 @@
             justify-content: center;
             gap: 50px;
         }
-    }   
+    
+    }  
 }

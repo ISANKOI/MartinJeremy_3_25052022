@@ -12,7 +12,7 @@ body{
 .wrapper {
     max-width: 992px;
     margin: auto;
-    padding: 0px 32px;
+    padding: 0px 16px;
 }
 
 ul{ list-style-type:none;
@@ -95,8 +95,8 @@ header{
 }
 
 .fonctionnement{
-    width: calc(100% - 48px);
-    padding: 24px;
+    width: 100%;
+    padding: 24px 0;
     background-color: white;
     
     &__list{
@@ -140,7 +140,7 @@ header{
 }
 
 .restaurants{
-    padding: 16px;
+    padding: 16px 0;
     background-color: #F6F6F6;
     
     &__titre{ padding-bottom: 16px;}
@@ -184,6 +184,13 @@ header{
                 &__description{
                     width: 100%;
                     position: relative;
+                    h4{
+                        font-size: 18px;
+                    }
+                    h5{
+                        font-size: 16px;
+                        font-weight: normal;
+                    }
                 }
 
                 &__heart{
@@ -194,20 +201,7 @@ header{
                     right: 16px;
                     bottom: 18px;
                     } 
-                    .fa-solid{
-                    opacity: 0;
-                    background-image: linear-gradient(to top, $color-primary, $color-secondary );
-                    background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    -webkit-background-clip: text;
-                    transition: .5s;
-                        &:hover{
-                            opacity: 1;
-                        }    
-                    }
-                    &:hover .fa-regular{
-                        animation: btn-heart 0.25s both;  
-                    }  
+                    @include heart-btn;  
                        
                 }
 
@@ -239,15 +233,23 @@ main{background-color: #f6f6f6;}
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 32px;
+        padding: 32px 16px;
+        position: relative;
 
         &__titre {
             font-family: 'Shrikhand', "cursive";
             font-size: 26px;
         }
         &__heart{
-            font-size: 30px;
             @include heart-btn;
+            i{   
+                font-size: 32px;
+                position: absolute;
+                right: 16px;
+                bottom: 34px;
+                    
+            }
+            
         }
     
     }
@@ -312,7 +314,7 @@ main{background-color: #f6f6f6;}
                     justify-content: center;
                     align-items: center;
                     padding: 10px 20px;
-                    margin-right: -64px;
+                    margin-right: -65px;
                     border-radius: 0 12px 12px 0 ;
                     background-color: $color-tertiary;
                     transition: all 500ms;
@@ -332,7 +334,6 @@ main{background-color: #f6f6f6;}
     padding: 40px 0;
     &__button{
         @include btn-gradient;
-        font-weight: 500px;
     }
 }
 

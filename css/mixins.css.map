@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AA8BI;;;;;;;;;IASA",
+    "mappings": "",
     "sources": [
         "../sass/Utils/mixins.scss"
     ],

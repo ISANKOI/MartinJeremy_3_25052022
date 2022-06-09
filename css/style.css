@@ -1,15 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-/*&:active{
-        background-image: linear-gradient(to top, $color-primary, $color-secondary );
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-        cursor: pointer;   
-        transition: 0.5s both;   
-
-    }
-  */
 @keyframes loader {
   100% {
     z-index: -3;
@@ -67,11 +57,10 @@
 .footer {
   background-color: #353535;
   padding: 16px;
-  height: calc( 27vh - 178px);
 }
 
 .footer__logo {
-  font-size: 18px;
+  font-size: 20px;
   font-family: 'Shrikhand', "cursive";
   color: white;
 }
@@ -103,30 +92,36 @@ body {
 }
 
 @media (min-width: 1024px) {
-  body .fonctionnement {
+  body main {
+    background-color: #FFFFFF;
+  }
+  body main .fonctionnement {
     text-align: center;
   }
-  body .fonctionnement h2 {
+  body main .fonctionnement h2 {
     padding-bottom: 24px;
   }
-  body .fonctionnement__list {
+  body main .fonctionnement__list {
     flex-direction: initial;
     justify-content: center;
     gap: 30px;
   }
-  body .fonctionnement__list li {
+  body main .fonctionnement__list li {
     width: 100%;
   }
-  body .restaurants__container {
+  body main .restaurants__container {
     flex-wrap: wrap;
     flex-direction: row;
   }
-  body .restaurants__container a {
+  body main .restaurants__container a {
     width: calc( 50% - 8px);
   }
-  body .menuContainer {
+  body main .menuContainer {
     display: flex;
     justify-content: center;
+  }
+  body .footer {
+    height: calc( 27vh - 178px);
   }
   body .footer__logo {
     display: flex;
@@ -142,7 +137,7 @@ body {
 .wrapper {
   max-width: 992px;
   margin: auto;
-  padding: 0px 32px;
+  padding: 0px 16px;
 }
 
 ul {
@@ -232,7 +227,6 @@ header nav .logo {
   align-items: center;
   color: white;
   border-radius: 50px;
-  font-weight: bold;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
   cursor: pointer;
@@ -246,8 +240,8 @@ header nav .logo {
 }
 
 .fonctionnement {
-  width: calc(100% - 48px);
-  padding: 24px;
+  width: 100%;
+  padding: 24px 0;
   background-color: white;
 }
 
@@ -293,7 +287,7 @@ header nav .logo {
 }
 
 .restaurants {
-  padding: 16px;
+  padding: 16px 0;
   background-color: #F6F6F6;
 }
 
@@ -342,6 +336,15 @@ header nav .logo {
   position: relative;
 }
 
+.restaurants__container article .bottom__description h4 {
+  font-size: 18px;
+}
+
+.restaurants__container article .bottom__description h5 {
+  font-size: 16px;
+  font-weight: normal;
+}
+
 .restaurants__container article .bottom__heart i {
   font-size: 32px;
   position: absolute;
@@ -356,6 +359,7 @@ header nav .logo {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   transition: .5s;
+  cursor: pointer;
 }
 
 .restaurants__container article .bottom__heart .fa-solid:hover {
@@ -389,7 +393,8 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 32px;
+  padding: 32px 16px;
+  position: relative;
 }
 
 .menu__nomrestaurant__titre {
@@ -397,8 +402,29 @@ main {
   font-size: 26px;
 }
 
-.menu__nomrestaurant__heart {
-  font-size: 30px;
+.menu__nomrestaurant__heart .fa-solid {
+  opacity: 0;
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.menu__nomrestaurant__heart .fa-solid:hover {
+  opacity: 1;
+}
+
+.menu__nomrestaurant__heart:hover .fa-regular {
+  animation: btn-heart 0.25s both;
+}
+
+.menu__nomrestaurant__heart i {
+  font-size: 32px;
+  position: absolute;
+  right: 16px;
+  bottom: 34px;
 }
 
 .menu .containerItem {
@@ -498,7 +524,7 @@ main {
   justify-content: center;
   align-items: center;
   padding: 10px 20px;
-  margin-right: -64px;
+  margin-right: -65px;
   border-radius: 0 12px 12px 0;
   background-color: #99E2D0;
   transition: all 500ms;
@@ -523,12 +549,10 @@ main {
   align-items: center;
   color: white;
   border-radius: 50px;
-  font-weight: bold;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
   cursor: pointer;
   transition-duration: 0.30s;
-  font-weight: 500px;
 }
 
 .commande__button:hover {
