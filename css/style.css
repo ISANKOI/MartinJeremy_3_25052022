@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+/*&:active{
+        background-image: linear-gradient(to top, $color-primary, $color-secondary );
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        cursor: pointer;   
+        transition: 0.5s both;   
+
+    }
+  */
 @keyframes loader {
   100% {
     z-index: -3;
@@ -42,6 +52,15 @@
   }
   100% {
     transform: rotate(0);
+  }
+}
+
+@keyframes btn-heart {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
@@ -320,19 +339,31 @@ header nav .logo {
 
 .restaurants__container article .bottom__description {
   width: 100%;
+  position: relative;
 }
 
-.restaurants__container article .bottom__heart {
-  font-size: 30px;
+.restaurants__container article .bottom__heart i {
+  font-size: 32px;
+  position: absolute;
+  right: 16px;
+  bottom: 18px;
 }
 
-.restaurants__container article .bottom__heart:active {
+.restaurants__container article .bottom__heart .fa-solid {
+  opacity: 0;
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  cursor: pointer;
-  transition: 0.5s both;
+  transition: .5s;
+}
+
+.restaurants__container article .bottom__heart .fa-solid:hover {
+  opacity: 1;
+}
+
+.restaurants__container article .bottom__heart:hover .fa-regular {
+  animation: btn-heart 0.25s both;
 }
 
 /*--- MENU RESTAURANTS ---*/
@@ -368,15 +399,6 @@ main {
 
 .menu__nomrestaurant__heart {
   font-size: 30px;
-}
-
-.menu__nomrestaurant__heart:active {
-  background-image: linear-gradient(to top, #9356DC, #FF79DA);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  cursor: pointer;
-  transition: 0.5s both;
 }
 
 .menu .containerItem {

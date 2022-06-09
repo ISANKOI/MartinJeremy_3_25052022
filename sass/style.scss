@@ -181,18 +181,41 @@ header{
                 padding: 16px;
                 background-color: rgb(255, 255, 255);
                 
-
                 &__description{
                     width: 100%;
+                    position: relative;
                 }
 
                 &__heart{
-                    font-size: 30px;
-                    @include heart-btn;    
                     
+                    i{
+                    font-size: 32px;
+                    position: absolute;
+                    right: 16px;
+                    bottom: 18px;
+                    } 
+                    .fa-solid{
+                    opacity: 0;
+                    background-image: linear-gradient(to top, $color-primary, $color-secondary );
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    -webkit-background-clip: text;
+                    transition: .5s;
+                        &:hover{
+                            opacity: 1;
+                        }    
+                    }
+                    &:hover .fa-regular{
+                        animation: btn-heart 0.25s both;  
+                    }  
+                       
                 }
+
             }
-        }
+                        
+                       
+        }  
+        
     }
 }
 

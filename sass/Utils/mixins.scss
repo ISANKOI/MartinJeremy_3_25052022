@@ -26,8 +26,9 @@
 
 @mixin heart-btn {
 
+    }
                   
-    &:active{
+    /*&:active{
         background-image: linear-gradient(to top, $color-primary, $color-secondary );
         background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -36,8 +37,8 @@
         transition: 0.5s both;   
 
     }
-    
-}
+  */  
+
 
 @mixin tablet-desktop-only {
     @media (min-width: $breakpoints-tablet-desktop) {

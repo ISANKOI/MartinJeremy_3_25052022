@@ -1,1 +1,11 @@
-/* No CSS *//*# sourceMappingURL=mixins.css.map */
+/*&:active{
+        background-image: linear-gradient(to top, $color-primary, $color-secondary );
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        cursor: pointer;   
+        transition: 0.5s both;   
+
+    }
+  */
+/*# sourceMappingURL=mixins.css.map */
