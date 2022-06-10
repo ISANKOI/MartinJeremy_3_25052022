@@ -1,14 +1,20 @@
 header {
   padding: 16px;
+  position: relative;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 }
 
 header nav {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 header nav i {
-  font-weight: 500;
+  font-size: 20px;
+  position: absolute;
+  left: 22px;
+  top: 22px;
 }
 
 header nav .logo {

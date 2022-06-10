@@ -1,0 +1,118 @@
+.menuImg{
+    max-width: 100%;
+    max-height: 512px;
+    width: 100%;
+    object-fit: cover;
+
+}
+.menu{
+    background-color: #f6f6f6;
+    border-radius: 32px 32px 0px 0px;
+    position: relative;
+    margin-top: -64px;
+
+    &__nomrestaurant{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 32px 16px;
+        position: relative;
+
+        &__titre {
+            font-family: 'Shrikhand', "cursive";
+            font-size: 26px;
+        }
+        &__heart{
+            @include heart-btn;
+            i{   
+                font-size: 32px;
+                position: absolute;
+                right: 16px;
+                bottom: 34px;     
+            }  
+        }
+    }
+
+    .containerItem{
+        padding: 16px;
+        overflow: hidden;
+        width: calc( 100% - 32px);
+
+        &__titre{
+            padding-bottom: 6px;
+            font-weight: 400;
+            @include menu-bordure;
+        }
+
+        .menuList{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            
+            &__plat{
+                display: flex;
+                justify-content: space-between;
+                background-color: white;
+                border-radius: 12px 12px 12px 12px;
+                box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.10);
+                animation: 1000ms both animation-menu;
+                cursor: pointer;
+                overflow: hidden;
+
+                @for $i from 1 to 10 {
+                    &:nth-child(#{$i}) {
+                        animation-delay: 200ms * $i;
+                    }   
+                } 
+                &:hover .menuList__plat__check{
+                    margin-right: 0;
+                    
+                    i{
+                        animation: check-rotation 600ms;
+                    }
+                }
+
+                &__nom{
+                    width: 100%;
+                    padding: 16px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    h4{
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }  
+                }
+
+                &__prix{
+                    padding: 16px;
+                    align-self: end;
+                }
+                
+                &__check{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 10px 20px;
+                    margin-right: -65px;
+                    border-radius: 0 12px 12px 0 ;
+                    background-color: $color-tertiary;
+                    transition: all 500ms;
+                    i{
+                        font-size: 24px;
+                        color: #fff;  
+                    }
+                }         
+            }
+        }
+    }
+}
+.commande{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+    &__button{
+        @include btn-gradient;
+    }
+}

@@ -1,0 +1,19 @@
+body{ 
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    @include tablet-desktop-only;
+}
+.wrapper {
+    max-width: 992px;
+    margin: auto;
+    padding: 0px 16px;
+}
+
+ul{ list-style-type:none;
+    padding: 0px;
+}
+h1, h2, h3, h4, h5 { margin: 0px;}
+
+a{  text-decoration: none;
+    color: black;
+}

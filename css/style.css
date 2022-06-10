@@ -54,38 +54,6 @@
   }
 }
 
-.footer {
-  background-color: #353535;
-  padding: 16px;
-}
-
-.footer__logo {
-  font-size: 20px;
-  font-family: 'Shrikhand', "cursive";
-  color: white;
-}
-
-.footer__list {
-  padding: 0px;
-}
-
-.footer__list li {
-  line-height: 24px;
-}
-
-.footer__list li :hover {
-  text-decoration: underline;
-}
-
-.footer__list li a {
-  color: white;
-}
-
-.footer__list li a i {
-  width: 16px;
-  padding-right: 8px;
-}
-
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0px;
@@ -196,6 +164,38 @@ header nav i {
 header nav .logo {
   width: 180px;
   height: 32px;
+}
+
+.footer {
+  background-color: #353535;
+  padding: 16px;
+}
+
+.footer__logo {
+  font-size: 20px;
+  font-family: 'Shrikhand', "cursive";
+  color: white;
+}
+
+.footer__list {
+  padding: 0px;
+}
+
+.footer__list li {
+  line-height: 24px;
+}
+
+.footer__list li :hover {
+  text-decoration: underline;
+}
+
+.footer__list li a {
+  color: white;
+}
+
+.footer__list li a i {
+  width: 16px;
+  padding-right: 8px;
 }
 
 .top__location {
@@ -348,8 +348,8 @@ header nav .logo {
 .restaurants__container article .bottom__heart i {
   font-size: 32px;
   position: absolute;
-  right: 16px;
-  bottom: 18px;
+  right: 15px;
+  bottom: 20px;
 }
 
 .restaurants__container article .bottom__heart .fa-solid {
@@ -368,11 +368,6 @@ header nav .logo {
 
 .restaurants__container article .bottom__heart:hover .fa-regular {
   animation: btn-heart 0.25s both;
-}
-
-/*--- MENU RESTAURANTS ---*/
-main {
-  background-color: #f6f6f6;
 }
 
 .menuImg {

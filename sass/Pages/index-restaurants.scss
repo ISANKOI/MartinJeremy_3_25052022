@@ -1,0 +1,69 @@
+.restaurants{
+    padding: 16px 0;
+    background-color: #F6F6F6;
+    
+    &__titre{ padding-bottom: 16px;}
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        article {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            .top{
+                &__new{
+                position: absolute;
+                right: 14px;
+                padding: 8px;
+                top: 14px;;
+                background-color: $color-tertiary;
+                color: #1b6150;
+
+                } 
+            }
+
+            img{
+                width: 100%;
+                height: 192px;
+                border-radius: 20px 20px 0 0;
+                object-fit: cover;
+
+            }
+
+            .bottom{
+                display: flex;
+                align-items: center;
+                border-radius: 0 0px 20px 20px;
+                padding: 16px;
+                background-color: rgb(255, 255, 255);
+                
+                &__description{
+                    width: 100%;
+                    position: relative;
+                    h4{
+                        font-size: 18px;
+                    }
+                    h5{
+                        font-size: 16px;
+                        font-weight: normal;
+                    }
+                }
+
+                &__heart{
+                    
+                    i{
+                    font-size: 32px;
+                    position: absolute;
+                    right: 15px;
+                    bottom: 20px;
+                    } 
+                    @include heart-btn;  
+                       
+                }
+            }                           
+        }     
+    }
+}

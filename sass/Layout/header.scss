@@ -1,0 +1,20 @@
+header{
+    padding: 16px;
+    position: relative;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.20);
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i{
+            font-size: 20px;
+            position: absolute;
+            left: 22px;
+            top: 22px;
+        }
+        .logo{
+            width: 180px;
+            height: 32px; 
+        }  
+    }     
+}
