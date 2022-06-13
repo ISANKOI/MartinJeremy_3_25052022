@@ -174,7 +174,7 @@ header nav .logo {
 .footer__logo {
   font-size: 20px;
   font-family: 'Shrikhand', "cursive";
-  color: white;
+  color: #FFFFFF;
 }
 
 .footer__list {
@@ -190,7 +190,7 @@ header nav .logo {
 }
 
 .footer__list li a {
-  color: white;
+  color: #FFFFFF;
 }
 
 .footer__list li a i {
@@ -225,7 +225,7 @@ header nav .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: #FFFFFF;
   border-radius: 50px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
@@ -234,7 +234,7 @@ header nav .logo {
 }
 
 .top__description__button:hover {
-  background-color: white;
+  background-color: #FFFFFF;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
   opacity: 0.9;
 }
@@ -242,7 +242,7 @@ header nav .logo {
 .fonctionnement {
   width: 100%;
   padding: 24px 0;
-  background-color: white;
+  background-color: #FFFFFF;
 }
 
 .fonctionnement__list {
@@ -281,7 +281,7 @@ header nav .logo {
   left: -12px;
   background-color: #9356DC;
   border-radius: 50%;
-  color: white;
+  color: #FFFFFF;
   height: 24px;
   width: 24px;
 }
@@ -328,7 +328,7 @@ header nav .logo {
   align-items: center;
   border-radius: 0 0px 20px 20px;
   padding: 16px;
-  background-color: white;
+  background-color: #FFFFFF;
 }
 
 .restaurants__container article .bottom__description {
@@ -444,7 +444,7 @@ header nav .logo {
 .menu .containerItem .menuList__plat {
   display: flex;
   justify-content: space-between;
-  background-color: white;
+  background-color: #FFFFFF;
   border-radius: 12px 12px 12px 12px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
   animation: 1000ms both animation-menu;
@@ -527,7 +527,7 @@ header nav .logo {
 
 .menu .containerItem .menuList__plat__check i {
   font-size: 24px;
-  color: #fff;
+  color: #FFFFFF;
 }
 
 .commande {
@@ -542,7 +542,7 @@ header nav .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: #FFFFFF;
   border-radius: 50px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
@@ -551,7 +551,7 @@ header nav .logo {
 }
 
 .commande__button:hover {
-  background-color: white;
+  background-color: #FFFFFF;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
   opacity: 0.9;
 }

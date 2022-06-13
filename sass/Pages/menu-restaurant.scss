@@ -52,7 +52,7 @@
             &__plat{
                 display: flex;
                 justify-content: space-between;
-                background-color: white;
+                background-color: $color-white;
                 border-radius: 12px 12px 12px 12px;
                 box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.10);
                 animation: 1000ms both animation-menu;
@@ -100,7 +100,7 @@
                     transition: all 500ms;
                     i{
                         font-size: 24px;
-                        color: #fff;  
+                        color: $color-white;  
                     }
                 }         
             }

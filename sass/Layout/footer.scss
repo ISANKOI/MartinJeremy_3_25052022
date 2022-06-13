@@ -4,7 +4,7 @@
     &__logo{
         font-size: 20px;
         font-family: 'Shrikhand', "cursive";
-        color: white;
+        color: $color-white;
     }
     &__list{
         padding: 0px;
@@ -14,7 +14,7 @@
                 text-decoration: underline;
             }
             a{
-                color: white;
+                color: $color-white;
                 i{
                     width: 16px;
                     padding-right: 8px;

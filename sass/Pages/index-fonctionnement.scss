@@ -1,7 +1,7 @@
 .fonctionnement{
     width: 100%;
     padding: 24px 0;
-    background-color: white;
+    background-color: $color-white;
     
     &__list{
         display: flex;
@@ -35,7 +35,7 @@
                 left: -12px;
                 background-color: $color-primary;
                 border-radius: 50%;
-                color: white;
+                color: $color-white;
                 height: 24px;
                 width: 24px;
             }
