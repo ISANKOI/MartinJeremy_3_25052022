@@ -88,9 +88,6 @@ body {
     display: flex;
     justify-content: center;
   }
-  body .footer {
-    height: calc( 27vh - 178px);
-  }
   body .footer__logo {
     display: flex;
     justify-content: center;
@@ -259,7 +256,7 @@ header nav .logo {
   background-color: #F6F6F6;
   border-radius: 22px 22px 22px 22px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-  padding: 26px;
+  padding: 22px;
   gap: 16px;
   font-weight: bold;
   cursor: pointer;
