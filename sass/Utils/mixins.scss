@@ -32,60 +32,60 @@
         -webkit-background-clip: text;
         transition: .5s;
         cursor: pointer;
-            &:hover{
-                opacity: 1;
-            }    
+        &:hover{
+            opacity: 1;
+        }    
         }
         &:hover .fa-regular{
             animation: btn-heart 0.25s both;  
         }
-
-    }
-                  
+    }                  
 
 @mixin tablet-desktop-only {
     @media (min-width: $breakpoints-tablet-desktop) {
         main{
             background-color: $color-white;
             .fonctionnement{
-            text-align: center;
                 h2{
-                padding-bottom: 24px;
+                padding-bottom: 16px;
                 }
-            &__list{
-            flex-direction: initial;
-            justify-content: center;
-            gap: 30px;
-                li{
-                width: 100%;
+
+                &__list{
+                    flex-direction: initial;
+                    justify-content: center;
+                    gap: 30px;
+
+                    li{ width: 100%;
+                    }
                 }
-            }
 
             }
             .restaurants{
                 &__container{
-                flex-wrap: wrap;
-                flex-direction: row;
-                a{
-                width: calc( 50% - 8px);
-                }
+                    flex-wrap: wrap;
+                    flex-direction: row;
+
+                    a{ width: calc( 50% - 16px);
+                    }
                 }
             }
+
             .menuContainer {
             display: flex;
             justify-content: center;
+            gap: 16px;
             }
         }
         .footer{
         
             &__logo{
-            display: flex;
-            justify-content: center;
+                display: flex;
+                justify-content: center;
             }
             &__list{
-            display: flex;
-            justify-content: center;
-            gap: 50px;
+                display: flex;
+                justify-content: center;
+                gap: 50px;
             }
     
         }

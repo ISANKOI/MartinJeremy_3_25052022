@@ -1,13 +1,13 @@
 .restaurants{
-    padding: 16px 0;
+    padding: 32px 0;
     background-color: #F6F6F6;
     
-    &__titre{ padding-bottom: 16px;}
+    &__titre{ padding-bottom: 32px;}
 
     &__container{
         display: flex;
         flex-direction: column;
-        gap: 16px;
+        gap: 32px;
 
         article {
             display: flex;

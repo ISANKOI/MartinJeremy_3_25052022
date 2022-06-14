@@ -63,11 +63,8 @@ body {
   body main {
     background-color: #FFFFFF;
   }
-  body main .fonctionnement {
-    text-align: center;
-  }
   body main .fonctionnement h2 {
-    padding-bottom: 24px;
+    padding-bottom: 16px;
   }
   body main .fonctionnement__list {
     flex-direction: initial;
@@ -82,11 +79,12 @@ body {
     flex-direction: row;
   }
   body main .restaurants__container a {
-    width: calc( 50% - 8px);
+    width: calc( 50% - 16px);
   }
   body main .menuContainer {
     display: flex;
     justify-content: center;
+    gap: 16px;
   }
   body .footer__logo {
     display: flex;
@@ -166,6 +164,7 @@ header nav .logo {
 .footer {
   background-color: #353535;
   padding: 16px;
+  /* height: calc( 27vh - 178px ); */
 }
 
 .footer__logo {
@@ -238,7 +237,7 @@ header nav .logo {
 
 .fonctionnement {
   width: 100%;
-  padding: 24px 0;
+  padding: 32px 0;
   background-color: #FFFFFF;
 }
 
@@ -284,18 +283,18 @@ header nav .logo {
 }
 
 .restaurants {
-  padding: 16px 0;
+  padding: 32px 0;
   background-color: #F6F6F6;
 }
 
 .restaurants__titre {
-  padding-bottom: 16px;
+  padding-bottom: 32px;
 }
 
 .restaurants__container {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 32px;
 }
 
 .restaurants__container article {
@@ -385,7 +384,7 @@ header nav .logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 32px 16px;
+  padding: 32px 16px 32px 0;
   position: relative;
 }
 
@@ -420,9 +419,9 @@ header nav .logo {
 }
 
 .menu .containerItem {
-  padding: 16px;
+  padding: 16px 0;
   overflow: hidden;
-  width: calc( 100% - 32px);
+  width: 100%;
 }
 
 .menu .containerItem__titre {

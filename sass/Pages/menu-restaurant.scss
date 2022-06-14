@@ -15,7 +15,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 32px 16px;
+        padding: 32px 16px 32px 0;
         position: relative;
 
         &__titre {
@@ -34,9 +34,9 @@
     }
 
     .containerItem{
-        padding: 16px;
+        padding: 16px 0;
         overflow: hidden;
-        width: calc( 100% - 32px);
+        width: 100%;
 
         &__titre{
             padding-bottom: 6px;
