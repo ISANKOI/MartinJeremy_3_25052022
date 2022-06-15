@@ -3,6 +3,7 @@ body{
     margin: 0px;
     @include tablet-desktop-only;
 }
+main{ min-height: calc( 100vh - 11em);}
 .wrapper {
     max-width: 992px;
     margin: auto;

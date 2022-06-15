@@ -97,6 +97,10 @@ body {
   }
 }
 
+main {
+  min-height: calc( 100vh - 11em);
+}
+
 .wrapper {
   max-width: 992px;
   margin: auto;
