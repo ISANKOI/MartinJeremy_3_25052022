@@ -291,7 +291,7 @@ header nav .logo {
   background-color: #F6F6F6;
 }
 
-.restaurants__titre {
+.restaurants__title {
   padding-bottom: 32px;
 }
 
@@ -384,7 +384,7 @@ header nav .logo {
   margin-top: -64px;
 }
 
-.menu__nomrestaurant {
+.menu__nameRestaurant {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -392,12 +392,12 @@ header nav .logo {
   position: relative;
 }
 
-.menu__nomrestaurant__titre {
+.menu__nameRestaurant__title {
   font-family: 'Shrikhand', "cursive";
   font-size: 26px;
 }
 
-.menu__nomrestaurant__heart .fa-solid {
+.menu__nameRestaurant__heart .fa-solid {
   opacity: 0;
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
   background-clip: text;
@@ -407,15 +407,15 @@ header nav .logo {
   cursor: pointer;
 }
 
-.menu__nomrestaurant__heart .fa-solid:hover {
+.menu__nameRestaurant__heart .fa-solid:hover {
   opacity: 1;
 }
 
-.menu__nomrestaurant__heart:hover .fa-regular {
+.menu__nameRestaurant__heart:hover .fa-regular {
   animation: btn-heart 0.25s both;
 }
 
-.menu__nomrestaurant__heart i {
+.menu__nameRestaurant__heart i {
   font-size: 32px;
   position: absolute;
   right: 16px;
@@ -428,7 +428,7 @@ header nav .logo {
   width: 100%;
 }
 
-.menu .containerItem__titre {
+.menu .containerItem__title {
   padding-bottom: 6px;
   font-weight: 400;
   border-bottom: 4px solid #99e2d0;
@@ -496,7 +496,7 @@ header nav .logo {
   animation: check-rotation 600ms;
 }
 
-.menu .containerItem .menuList__plat__nom {
+.menu .containerItem .menuList__plat__name {
   width: 100%;
   padding: 16px;
   white-space: nowrap;
@@ -504,12 +504,12 @@ header nav .logo {
   text-overflow: ellipsis;
 }
 
-.menu .containerItem .menuList__plat__nom h4 {
+.menu .containerItem .menuList__plat__name h4 {
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.menu .containerItem .menuList__plat__prix {
+.menu .containerItem .menuList__plat__price {
   padding: 16px;
   align-self: end;
 }
@@ -530,14 +530,14 @@ header nav .logo {
   color: #FFFFFF;
 }
 
-.commande {
+.order {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 40px 0;
 }
 
-.commande__button {
+.order__button {
   padding: 16px 24px;
   display: flex;
   justify-content: center;
@@ -550,7 +550,7 @@ header nav .logo {
   transition-duration: 0.30s;
 }
 
-.commande__button:hover {
+.order__button:hover {
   background-color: #FFFFFF;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
   opacity: 0.9;
