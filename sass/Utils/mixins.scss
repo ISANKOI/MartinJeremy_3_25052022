@@ -69,15 +69,19 @@
                     }
                 }
             }
-            .menu {
+
+            .menu{
                 height: 660px;
                 .menuContainer {
                 display: flex;
                 justify-content: center;
                 gap: 16px;
                 }
+
+            }
+
         }
-        }
+
         .footer{
         
             &__logo{
