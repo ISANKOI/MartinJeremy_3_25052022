@@ -81,7 +81,10 @@ body {
   body main .restaurants__container a {
     width: calc( 50% - 16px);
   }
-  body main .menuContainer {
+  body main .menu {
+    height: 660px;
+  }
+  body main .menu .menuContainer {
     display: flex;
     justify-content: center;
     gap: 16px;
