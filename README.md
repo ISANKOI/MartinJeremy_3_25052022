@@ -10,8 +10,7 @@ les plats soient prêts à leur arrivée. Finis, les temps d'attente au restaura
 - Mettre en œuvre des effets CSS graphiques avancés
 - Mettre en place une structure de navigation pour un site web
 - Assurer la cohérence graphique d'un site web
-- Utiliser un système de gestion de versions pour le suivi du projet et son hébergement
-- Mettre en place son environnement Front-End
+- Mettre en place un design web responsive
 
 ### Maquette de présentation ###
 
